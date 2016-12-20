@@ -4,6 +4,11 @@
 Process Classes
 ###############
 
+.. note::
+
+   When you define a process class organizer and/or class which already exists, any settings defined in your ZenPack 
+   will overwrite existing settings.
+
 Process Classes are used to define sets of similar running processes using a regular
 expression.  You can then monitor various aspects of the running processes, such as
 cpu and memory usage, with a datasource.
@@ -31,10 +36,6 @@ of a definition of a process class.
             excludeRegex: "\\b(vim|tail|grep|tar|cat|bash)\\b"
             replaceRegex: .*
             replacement: Widget
-
-.. note::
-
-  When you define a process class organizer and/or class which already exists, any settings defined in your ZenPack will overwrite existing settings.
 
 .. _process-class-organizer-fields:
 
